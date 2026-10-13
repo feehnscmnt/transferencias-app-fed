@@ -1,0 +1,12 @@
+<section class="card">
+    <h2>Novo Agendamento</h2>
+    <form [formGroup]="form" (ngSubmit)="agendar()">
+        <label>Conta de origem<input formControlName="contaOrigem" maxlength="10" placeholder="0000000000"></label>
+        <label>Conta de destino<input formControlName="contaDestino" maxlength="10" placeholder="0000000000"></label>
+        <label>Valor<input type="number" min="0.01" step="0.01" formControlName="valor"></label>
+        <label>Data da transferência<input type="date" formControlName="dataTransferencia"></label>
+        <p class="erro" *ngIf="erro">{{erro}}</p>
+        <p class="sucesso" *ngIf="sucesso">{{sucesso}}</p>
+        <button type="submit" [disabled]="enviando">{{enviando?'Salvando...':'Agendar'}}</button>
+    </form>
+</section>

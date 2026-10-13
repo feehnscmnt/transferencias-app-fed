@@ -1,0 +1,21 @@
+<section class="card">
+    <h2>Extrato de Agendamentos</h2>
+    <p *ngIf="!transferencias.length">Nenhum agendamento cadastrado.</p>
+    <table *ngIf="transferencias.length">
+        <thead>
+            <tr>
+                <th>Origem</th>
+                <th>Destino</th>
+                <th>Valor</th>
+                <th>Taxa</th>
+                <th>Total</th>
+                <th>Transferência</th>
+                <th>Agendamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of transferencias">
+                <td>{{t.contaOrigem}}</td>
+                <td>{{t.contaDestino}}</td>
+                <td>{{t.valor|currency:'BRL'}}</td>
+                <td>{{t.taxa|currency:'BRL'}}</td><td>{{t.valorTotal|currency:'BRL'}}</td><td>{{t.dataTransferencia|date:'dd/MM/yyyy'}}</td><td>{{t.dataAgendamento|date:'dd/MM/yyyy'}}</td></tr></tbody></table></section>
