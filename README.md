@@ -34,7 +34,3 @@ transferencias-app-fed/
 │       ├── models/
 │       └── services/
 └── README.md
-
-Exemplo de Navegação:
-
-![ExemploNavegacao](https://github.com/user-attachments/assets/19ec547c-4798-4887-b763-bb0c52c52427)
