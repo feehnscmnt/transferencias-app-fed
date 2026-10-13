@@ -37,4 +37,4 @@ transferencias-app-fed/
 
 Exemplo de Navegação:
 
-<img width="851" height="608" alt="image" src="https://github.com/user-attachments/assets/19ec547c-4798-4887-b763-bb0c52c52427"/>
+![ExemploNavegacao](https://github.com/user-attachments/assets/19ec547c-4798-4887-b763-bb0c52c52427)
